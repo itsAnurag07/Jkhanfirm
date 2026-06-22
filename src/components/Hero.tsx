@@ -90,9 +90,9 @@ export default function Hero() {
             <h1 
               style={{
                 color: '#ffffff',
-                fontSize: '4.5rem',
+                fontSize: '3.6rem',
                 fontFamily: 'var(--font-serif)',
-                lineHeight: 1.1,
+                lineHeight: 1.05,
                 fontWeight: 400,
                 letterSpacing: '-0.02em',
                 textShadow: '0 2px 10px rgba(0,0,0,0.15)',
@@ -137,8 +137,8 @@ export default function Hero() {
             <p 
               style={{ 
                 color: '#EFECE6', 
-                fontSize: '0.98rem', 
-                lineHeight: 1.6,
+                fontSize: '0.88rem', 
+                lineHeight: 1.45,
                 fontWeight: 300,
               }}
               className="hero-desc-long"
