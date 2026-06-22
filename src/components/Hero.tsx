@@ -19,10 +19,10 @@ export default function Hero() {
   return (
     <section 
       style={{
-        padding: '48px 20px 20px 20px',
+        padding: '40px 20px 20px 20px',
         backgroundColor: 'var(--bg-primary)',
         width: '100%',
-        minHeight: '100vh',
+        minHeight: '80vh',
         display: 'flex',
         flexDirection: 'column',
       }}
@@ -31,10 +31,10 @@ export default function Hero() {
       <div 
         style={{
           flexGrow: 1,
-          minHeight: '82vh',
+          minHeight: '68vh',
           borderRadius: '40px',
           position: 'relative',
-          padding: '4rem',
+          padding: '3rem',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
@@ -82,7 +82,7 @@ export default function Hero() {
             width: '100%',
             position: 'relative',
             zIndex: 2,
-            marginTop: '3.5rem',
+            marginTop: '1.5rem',
           }}
           className="hero-top-row"
         >
@@ -90,7 +90,7 @@ export default function Hero() {
             <h1 
               style={{
                 color: '#ffffff',
-                fontSize: '4.5rem',
+                fontSize: '3.5rem',
                 fontFamily: 'var(--font-serif)',
                 lineHeight: 1.1,
                 fontWeight: 400,
@@ -124,7 +124,7 @@ export default function Hero() {
               WebkitBackdropFilter: 'blur(16px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
               borderRadius: '24px',
-              padding: '2rem',
+              padding: '1.5rem',
               color: '#ffffff',
               display: 'flex',
               flexDirection: 'column',
@@ -137,7 +137,7 @@ export default function Hero() {
             <p 
               style={{ 
                 color: '#EFECE6', 
-                fontSize: '0.98rem', 
+                fontSize: '0.9rem', 
                 lineHeight: 1.6,
                 fontWeight: 300,
               }}
