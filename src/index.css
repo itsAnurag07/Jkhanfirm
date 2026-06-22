@@ -1,0 +1,240 @@
+/* Core CSS Custom Design System for JKhan Firm */
+:root {
+  /* Colors */
+  --bg-primary: #FBF9F4;      /* Linen / soft primary background */
+  --bg-secondary: #F5F1E9;    /* Light warm beige for section background */
+  --bg-card: #EFECE6;         /* Cream-beige card background */
+  --text-dark: #241B15;       /* Deep charcoal/bronze for main readable text */
+  --text-muted: #62584E;      /* Brown-tinted gray for descriptions */
+  --accent-color: #8E7A63;    /* Muted gold/bronze for active elements and numbers */
+  --accent-dark: #3E2F23;     /* Warm dark bronze for primary dark cards/buttons */
+  --accent-light: #FBF8F3;    /* Highlight off-white */
+  --glass-bg: rgba(251, 249, 244, 0.75);
+  --glass-border: rgba(142, 122, 99, 0.15);
+  
+  /* Fonts */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Radii & Shadows */
+  --radius-lg: 36px;          /* Used for main feature cards/hero */
+  --radius-md: 20px;          /* Used for buttons, secondary cards */
+  --radius-sm: 10px;          /* Small elements */
+  --shadow-sm: 0 4px 20px rgba(36, 27, 21, 0.02);
+  --shadow-md: 0 10px 30px rgba(36, 27, 21, 0.04);
+  --shadow-lg: 0 20px 45px rgba(36, 27, 21, 0.06);
+  
+  /* Spacing */
+  --spacing-section: 120px;
+  
+  /* Animation Timing */
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Mode Overrides (Optional / Sleek Minimalist Theme Toggle integration if needed, 
+   but user explicitly requested warm-beige palette) */
+
+/* Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+}
+
+/* Typography styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-dark);
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button, .btn {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+/* Main Layout utilities */
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--spacing-section) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flex & Grid helpers */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-dark);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-dark);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  position: relative;
+}
+
+.btn-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: var(--transition-smooth);
+}
+
+.btn-link:hover::after {
+  width: 100%;
+}
+
+/* Rounded luxury cards */
+.luxury-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  border: 1px solid rgba(142, 122, 99, 0.05);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.luxury-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-section: 80px;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
