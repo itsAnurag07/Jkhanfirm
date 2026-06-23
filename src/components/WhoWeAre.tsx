@@ -129,6 +129,11 @@ export default function WhoWeAre() {
           z-index: 1;
           pointer-events: none;
         }
+        .fp-who-swirl svg {
+          width: 240px;
+          height: 213px;
+          display: block;
+        }
         .fp-who-stats-row {
           display: flex;
           align-items: flex-end;
@@ -227,6 +232,14 @@ export default function WhoWeAre() {
           .fp-who-inner { flex-direction: column; }
           .fp-who-golden-card { flex: none; height: auto; min-height: 220px; }
           .fp-who-cream-panel { height: auto; min-height: 220px; }
+          .fp-who-swirl svg {
+            width: 140px !important;
+            height: 124px !important;
+          }
+          .fp-who-swirl {
+            top: -10px !important;
+            right: -10px !important;
+          }
           .fp-who-circle-img {
             width: 100%;
             height: 220px;
