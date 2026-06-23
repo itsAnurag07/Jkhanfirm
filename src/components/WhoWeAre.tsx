@@ -11,7 +11,7 @@ export default function WhoWeAre() {
             <p className="fp-who-eyebrow">OUR COMPANY<br />IN NUMBERS</p>
             {/* Architectural building sketch — top right */}
             <div className="fp-who-swirl">
-              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
+              <svg viewBox="15 20 90 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="240" height="213">
                 {/* Drafting grid & guidelines */}
                 <line x1="10" y1="100" x2="110" y2="100" stroke="rgba(255,255,255,0.18)" strokeWidth="0.8" strokeDasharray="2 2" />
                 <line x1="20" y1="20" x2="20" y2="110" stroke="rgba(255,255,255,0.12)" strokeWidth="0.8" strokeDasharray="3 3" />
@@ -123,9 +123,9 @@ export default function WhoWeAre() {
         }
         .fp-who-swirl {
           position: absolute;
-          top: -10px;
-          right: -10px;
-          opacity: 1;
+          top: -25px;
+          right: -25px;
+          opacity: 0.85;
           z-index: 1;
           pointer-events: none;
         }

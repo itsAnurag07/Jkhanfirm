@@ -76,10 +76,10 @@ function StatBox({ stat, trigger }: { stat: StatItem; trigger: boolean }) {
 /* ── Main Stats section ── */
 export default function Stats() {
   const stats: StatItem[] = [
-    { end: 2,    suffix: 'M+',  prefix: '1.', decimals: 0, label: 'Square Feet Built' },
-    { end: 150,  suffix: '+',                              label: 'Landmark Projects' },
-    { end: 200,  suffix: '+',                              label: 'Local Artisans' },
-    { end: 100,  suffix: '%',                              label: 'Structural Assurance' },
+    { end: 2, suffix: 'M+', prefix: '1.', decimals: 0, label: 'Square Feet Built' },
+    { end: 1000, suffix: '+', label: 'Landmark Projects' },
+    { end: 200, suffix: '+', label: 'Local Artisans' },
+    { end: 100, suffix: '%', label: 'Structural Assurance' },
   ];
 
   const sectionRef = useRef<HTMLElement>(null);
