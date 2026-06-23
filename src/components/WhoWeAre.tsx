@@ -8,31 +8,52 @@ export default function WhoWeAre() {
 
           {/* ─ Left: golden stat card ─ */}
           <div className="fp-who-golden-card">
-            <p className="fp-who-eyebrow">OUR COMPANY<br/>IN NUMBERS</p>
-            {/* Large swirl emblem — top right */}
+            <p className="fp-who-eyebrow">OUR COMPANY<br />IN NUMBERS</p>
+            {/* Architectural building sketch — top right */}
             <div className="fp-who-swirl">
               <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
-                <circle cx="60" cy="60" r="58" stroke="rgba(255,255,255,0.22)" strokeWidth="1"/>
-                <circle cx="60" cy="60" r="46" stroke="rgba(255,255,255,0.18)" strokeWidth="1"/>
-                <circle cx="60" cy="60" r="34" stroke="rgba(255,255,255,0.14)" strokeWidth="1"/>
-                <circle cx="60" cy="60" r="22" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-                {/* Swirl waves */}
-                <path d="M60 4 Q90 20 78 50 Q66 80 90 96" stroke="rgba(255,255,255,0.55)" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
-                <path d="M60 4 Q30 20 42 50 Q54 80 30 96" stroke="rgba(255,255,255,0.4)" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
-                <path d="M4 60 Q20 30 50 42 Q80 54 96 30" stroke="rgba(255,255,255,0.35)" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                <path d="M4 60 Q20 90 50 78 Q80 66 96 90" stroke="rgba(255,255,255,0.28)" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                <circle cx="60" cy="60" r="5" fill="rgba(255,255,255,0.75)"/>
+                {/* Drafting grid & guidelines */}
+                <line x1="10" y1="100" x2="110" y2="100" stroke="rgba(255,255,255,0.18)" strokeWidth="0.8" strokeDasharray="2 2" />
+                <line x1="20" y1="20" x2="20" y2="110" stroke="rgba(255,255,255,0.12)" strokeWidth="0.8" strokeDasharray="3 3" />
+                <line x1="100" y1="20" x2="100" y2="110" stroke="rgba(255,255,255,0.12)" strokeWidth="0.8" strokeDasharray="3 3" />
+                <circle cx="60" cy="60" r="45" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" strokeDasharray="4 4" />
+
+                {/* Building structure lines */}
+                <line x1="15" y1="95" x2="105" y2="95" stroke="rgba(255,255,255,0.55)" strokeWidth="1.2" />
+                
+                {/* Left block */}
+                <rect x="25" y="55" width="35" height="40" stroke="rgba(255,255,255,0.45)" strokeWidth="1" />
+                <line x1="42.5" y1="55" x2="42.5" y2="95" stroke="rgba(255,255,255,0.22)" strokeWidth="0.8" />
+                <line x1="25" y1="75" x2="60" y2="75" stroke="rgba(255,255,255,0.22)" strokeWidth="0.8" />
+                
+                {/* Right elevated block */}
+                <rect x="55" y="40" width="40" height="35" stroke="rgba(255,255,255,0.45)" strokeWidth="1" />
+                <line x1="65" y1="75" x2="65" y2="95" stroke="rgba(255,255,255,0.35)" strokeWidth="1" />
+                <line x1="85" y1="75" x2="85" y2="95" stroke="rgba(255,255,255,0.35)" strokeWidth="1" />
+                <line x1="75" y1="40" x2="75" y2="75" stroke="rgba(255,255,255,0.22)" strokeWidth="0.8" />
+                <line x1="55" y1="57.5" x2="95" y2="57.5" stroke="rgba(255,255,255,0.22)" strokeWidth="0.8" />
+
+                {/* Penthouse/loft box */}
+                <rect x="35" y="30" width="25" height="25" stroke="rgba(255,255,255,0.38)" strokeWidth="1" />
+                <line x1="47.5" y1="30" x2="47.5" y2="55" stroke="rgba(255,255,255,0.18)" strokeWidth="0.8" />
+
+                {/* Extension drafting lines for artistic sketch effect */}
+                <line x1="20" y1="55" x2="65" y2="55" stroke="rgba(255,255,255,0.2)" strokeWidth="0.6" />
+                <line x1="55" y1="40" x2="100" y2="40" stroke="rgba(255,255,255,0.2)" strokeWidth="0.6" />
+                <line x1="55" y1="75" x2="100" y2="75" stroke="rgba(255,255,255,0.2)" strokeWidth="0.6" />
+                <line x1="25" y1="95" x2="25" y2="25" stroke="rgba(255,255,255,0.15)" strokeWidth="0.6" />
+                <line x1="95" y1="95" x2="95" y2="25" stroke="rgba(255,255,255,0.15)" strokeWidth="0.6" />
               </svg>
             </div>
             {/* Stats at bottom */}
             <div className="fp-who-stats-row">
               <div className="fp-who-stat-item">
-                <span className="fp-who-num">50+</span>
+                <span className="fp-who-num">1000+</span>
                 <span className="fp-who-lbl">Projects Delivered</span>
               </div>
               <div className="fp-who-stat-item">
-                <span className="fp-who-num fp-who-num--sm">10+</span>
-                <span className="fp-who-lbl">Years of Industry<br/>Experience</span>
+                <span className="fp-who-num fp-who-num--sm">32+</span>
+                <span className="fp-who-lbl">Years of Industry<br />Experience</span>
               </div>
             </div>
           </div>
