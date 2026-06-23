@@ -345,16 +345,25 @@ export default function ContactCTA() {
           }
         }
         @media (max-width: 576px) {
+          #contact-cta {
+            padding: 20px 20px !important;
+          }
           .contact-card {
-            padding: 2rem 1.25rem !important;
+            padding: 1.25rem !important;
             border-radius: 24px !important;
+            gap: 1.25rem !important;
           }
           .contact-card h2 {
             font-size: 1.75rem !important;
             line-height: 1.3 !important;
           }
           .contact-form-container {
-            padding: 1.5rem !important;
+            padding: 1.25rem !important;
+          }
+          .contact-form-container input,
+          .contact-form-container select,
+          .contact-form-container textarea {
+            font-size: 16px !important;
           }
           .form-row {
             grid-template-columns: 1fr !important;

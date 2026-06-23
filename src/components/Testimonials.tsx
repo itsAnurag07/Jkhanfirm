@@ -122,6 +122,11 @@ export default function Testimonials() {
             gap: 30px !important;
           }
         }
+        @media (max-width: 768px) {
+          #testimonials {
+            padding: 40px 20px !important;
+          }
+        }
       `}</style>
     </section>
   );

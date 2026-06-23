@@ -158,6 +158,9 @@ export default function Footer() {
           transform: translateX(2px);
         }
         @media (max-width: 768px) {
+          footer {
+            padding: 40px 20px 20px 20px !important;
+          }
           .footer-grid {
             grid-template-columns: 1fr 1fr !important;
             gap: 30px !important;
