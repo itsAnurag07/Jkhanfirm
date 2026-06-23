@@ -107,6 +107,7 @@ export default function FeaturedProjects() {
                   position: 'relative',
                   boxShadow: 'var(--shadow-md)',
                 }}
+                className="project-img-container"
               >
                  <img
                   src={project.image}
@@ -187,7 +188,7 @@ export default function FeaturedProjects() {
             grid-template-columns: 1fr !important;
             gap: 40px !important;
           }
-          .project-card-wrapper img {
+          .project-img-container {
             height: 320px !important;
           }
         }

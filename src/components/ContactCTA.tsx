@@ -22,8 +22,8 @@ export default function ContactCTA() {
   };
 
   return (
-    <section 
-      id="contact-cta" 
+    <section
+      id="contact-cta"
       style={{
         padding: '60px 20px',
         backgroundColor: 'var(--bg-primary)',
@@ -31,7 +31,7 @@ export default function ContactCTA() {
     >
       <div className="container" style={{ maxWidth: '1280px', padding: 0 }}>
         {/* Large Rounded Card Wrapper */}
-        <div 
+        <div
           style={{
             background: 'linear-gradient(145deg, #3E2F23 0%, #241B15 100%)',
             borderRadius: '40px',
@@ -48,11 +48,11 @@ export default function ContactCTA() {
           {/* Left Side: Contact Information & Pitch */}
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '3rem' }}>
             <div>
-              <p 
-                style={{ 
-                  color: 'var(--bg-card)', 
-                  textTransform: 'uppercase', 
-                  fontSize: '0.8rem', 
+              <p
+                style={{
+                  color: 'var(--bg-card)',
+                  textTransform: 'uppercase',
+                  fontSize: '0.8rem',
                   letterSpacing: '0.15rem',
                   fontWeight: 500,
                   marginBottom: '1.5rem',
@@ -60,10 +60,10 @@ export default function ContactCTA() {
               >
                 Start Your Journey
               </p>
-              <h2 
-                style={{ 
-                  fontSize: 'clamp(2rem, 5vw, 3rem)', 
-                  fontFamily: 'var(--font-serif)', 
+              <h2
+                style={{
+                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontFamily: 'var(--font-serif)',
                   color: '#ffffff',
                   marginBottom: '1.5rem',
                   lineHeight: 1.25,
@@ -80,7 +80,7 @@ export default function ContactCTA() {
             {/* Direct Contact Details */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div 
+                <div
                   style={{
                     width: '44px',
                     height: '44px',
@@ -101,7 +101,7 @@ export default function ContactCTA() {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div 
+                <div
                   style={{
                     width: '44px',
                     height: '44px',
@@ -117,12 +117,12 @@ export default function ContactCTA() {
                 </div>
                 <div>
                   <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Email Us</p>
-                  <a href="mailto:info@jkhanfirm.com" style={{ fontSize: '1.05rem', fontWeight: 500, color: '#ffffff' }}>info@jkhanfirm.com</a>
+                  <a href="mailto:jkhanfirm@gmail.com" style={{ fontSize: '1.05rem', fontWeight: 500, color: '#ffffff' }}>jkhanfirm@gmail.com</a>
                 </div>
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div 
+                <div
                   style={{
                     width: '44px',
                     height: '44px',
@@ -145,7 +145,7 @@ export default function ContactCTA() {
           </div>
 
           {/* Right Side: Interactive Booking Form */}
-          <div 
+          <div
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.04)',
               border: '1px solid rgba(255, 255, 255, 0.08)',
@@ -156,7 +156,7 @@ export default function ContactCTA() {
             className="contact-form-container"
           >
             {submitted ? (
-              <div 
+              <div
                 style={{
                   height: '100%',
                   display: 'flex',
@@ -167,7 +167,7 @@ export default function ContactCTA() {
                   padding: '3rem 0',
                 }}
               >
-                <div 
+                <div
                   style={{
                     width: '64px',
                     height: '64px',
