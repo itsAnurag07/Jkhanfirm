@@ -5,7 +5,7 @@ import pprRender from '../assets/images/PPR_3.png';
 import ppr1 from '../assets/images/PPR_1.png';
 import palmCity from '../assets/images/PalmCity_1.png';
 import palmCityFront from '../assets/images/PalmCity_2.png';
-import palmCityVideo from '../assets/Videos/palmcity-video.mp4';
+const palmCityVideo = "https://gsqaqwta9wyxwxoj.public.blob.vercel-storage.com/palmcity-video.mp4";
 import hamiltonTower from '../assets/images/Hamilton -Portfolio.png';
 import signature from '../assets/images/Signature_Latest.png';
 import interiorDesign from '../assets/images/Interior design& planing.png';

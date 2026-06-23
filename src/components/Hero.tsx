@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
-import heroVideo from '../assets/Videos/Junaid Hero d2.mp4';
+
+const heroVideo = "https://gsqaqwta9wyxwxoj.public.blob.vercel-storage.com/Junaid%20Hero%20d2.mp4";
 
 export default function Hero() {
   const scrollToContact = () => {
