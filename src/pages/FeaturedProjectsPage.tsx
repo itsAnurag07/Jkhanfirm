@@ -861,6 +861,11 @@ export default function FeaturedProjectsPage() {
             justify-content: center !important;
             gap: 0 !important;
           }
+          .fp-meta-strip {
+            grid-template-columns: repeat(2, 1fr) !important;
+            padding: 1.25rem 1.5rem !important;
+            gap: 1.25rem !important;
+          }
         }
         @media (max-width: 480px) {
           .fp-hero-overlay { padding: 18px 20px; }

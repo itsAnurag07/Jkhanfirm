@@ -349,6 +349,10 @@ export default function ContactCTA() {
             padding: 2rem 1.25rem !important;
             border-radius: 24px !important;
           }
+          .contact-card h2 {
+            font-size: 1.75rem !important;
+            line-height: 1.3 !important;
+          }
           .contact-form-container {
             padding: 1.5rem !important;
           }

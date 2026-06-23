@@ -262,6 +262,13 @@ export default function Navbar() {
             display: none !important;
           }
         }
+        @media (max-width: 768px) {
+          #navbar {
+            padding: 0.5rem 1rem !important;
+            width: calc(100% - 24px) !important;
+            top: 12px !important;
+          }
+        }
         .nav-link {
           position: relative;
         }
