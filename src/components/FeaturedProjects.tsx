@@ -108,7 +108,7 @@ export default function FeaturedProjects() {
                   boxShadow: 'var(--shadow-md)',
                 }}
               >
-                <img
+                 <img
                   src={project.image}
                   alt={project.title}
                   style={{
@@ -119,47 +119,6 @@ export default function FeaturedProjects() {
                   }}
                   className="project-img"
                 />
-
-                {/* Float tags */}
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '24px',
-                    left: '24px',
-                    display: 'flex',
-                    gap: '10px',
-                  }}
-                >
-                  <span
-                    style={{
-                      backgroundColor: 'rgba(251, 249, 244, 0.85)',
-                      backdropFilter: 'blur(4px)',
-                      color: 'var(--text-dark)',
-                      padding: '0.4rem 1rem',
-                      borderRadius: '50px',
-                      fontSize: '0.75rem',
-                      fontWeight: 500,
-                      letterSpacing: '0.02em',
-                      border: '1px solid rgba(142, 122, 99, 0.1)',
-                    }}
-                  >
-                    {project.scope}
-                  </span>
-                  <span
-                    style={{
-                      backgroundColor: 'rgba(36, 27, 21, 0.75)',
-                      backdropFilter: 'blur(4px)',
-                      color: '#ffffff',
-                      padding: '0.4rem 1rem',
-                      borderRadius: '50px',
-                      fontSize: '0.75rem',
-                      fontWeight: 500,
-                      letterSpacing: '0.02em',
-                    }}
-                  >
-                    {project.size}
-                  </span>
-                </div>
               </div>
 
               {/* Text Meta Info */}

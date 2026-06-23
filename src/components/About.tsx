@@ -43,8 +43,8 @@ export default function About() {
     return () => observer.disconnect();
   }, []);
 
-  const count150 = useCountUp(150, 3000, triggered);
-  const count32  = useCountUp(32,  3000, triggered);
+  const count150 = useCountUp(1000, 3000, triggered);
+  const count32 = useCountUp(32, 3000, triggered);
 
   return (
     <section
@@ -73,7 +73,7 @@ export default function About() {
               />
               <div className="about-name-badge">
                 <span className="about-name">Jabbar Khan</span>
-                <span className="about-role">Founder & Principal</span>
+                <span className="about-role">Founder & Contractor</span>
               </div>
             </div>
 
