@@ -109,11 +109,15 @@ export default function Footer() {
             fontSize: '0.82rem',
             color: 'var(--text-muted)',
           }}
+          className="footer-bottom-bar"
         >
           {/* Left side: copyright + Intelloft */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <div 
+            style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+            className="footer-copyright-container"
+          >
             <span>© {new Date().getFullYear()} JKhan Firm. All rights reserved.</span>
-            <span style={{ opacity: 0.4 }}>|</span>
+            <span style={{ opacity: 0.4 }} className="footer-separator">|</span>
             <span>
               Designed and Developed by{' '}
               <a
@@ -136,7 +140,7 @@ export default function Footer() {
           </div>
 
           {/* Right side: legal links */}
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
+          <div style={{ display: 'flex', gap: '1.5rem' }} className="footer-legal-links">
             <a href="#" className="footer-link">Privacy Policy</a>
             <a href="#" className="footer-link">Terms of Service</a>
           </div>
@@ -157,6 +161,23 @@ export default function Footer() {
           .footer-grid {
             grid-template-columns: 1fr 1fr !important;
             gap: 30px !important;
+          }
+          .footer-bottom-bar {
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+            gap: 0.5rem !important;
+          }
+          .footer-copyright-container {
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 0.4rem !important;
+          }
+          .footer-separator {
+            display: none !important;
+          }
+          .footer-legal-links {
+            display: none !important;
           }
         }
         @media (max-width: 480px) {
